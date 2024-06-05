@@ -15,11 +15,20 @@ namespace Sunfit2._0.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.VB = "VB";
+            ViewData["test"] = "VD";
+            TempData["Data"] = "TD";
+            TempData.Keep();
             return View();
-        }
+                }
 
         public IActionResult about()
+
         {
+            ViewBag.VB = "VB";
+            ViewData["test"] = "VD";
+            TempData["Data"] = "TD";
+            TempData.Keep();
             return View();
         }
 
