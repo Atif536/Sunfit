@@ -6,6 +6,9 @@ namespace Sunfit2._0.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.VB = "VB";
+            ViewData["test"] = "VD";
+            TempData["Data"] = "TD";
             return View();
         }
     }
